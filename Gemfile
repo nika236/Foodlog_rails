@@ -66,3 +66,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "twitter", "~> 8.0"
+
+
+gem "sassc", "~> 2.4"
