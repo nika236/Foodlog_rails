@@ -17,9 +17,9 @@
       </div>
       <div class="card-footer">
          <%= link_to "Show ", entry, class: "card-footer-item" %>
-         <%= link_to "edit", edit_entry_path(entry), class: "card-footer-item" %>
-         <%= link_to 'Destroy' , entry, method: :delete, data: {confirm: 'Are you sure'},
-          class: "card-footer-item"  %>
+         <%= link_to "Edit", edit_entry_path(entry), class: "card-footer-item" %>
+         <%= link_to 'Destroy' , entry, data:{turbo_method: :delete,
+          turbo_confirm: "Are you sure?"},class: "card-footer-item"%>
       </div>
     </div>
   </div>
@@ -27,4 +27,7 @@
 </div>
 
 
-
+<div class="columns is-centered mt-6">
+  <%= link_to "View All Entries", archives_index_path, class: "button
+    is-link is-outlined is-centered"%>
+</div>
